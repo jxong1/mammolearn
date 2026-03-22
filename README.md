@@ -3,6 +3,10 @@ This project classifies mammography images using radiomics features and deep lea
 
 It includes scripts for data preprocessing, model training, evaluation, and visualisation.
 
+Trained models and histories are not included due to file size but can be found here:
+https://drive.google.com/file/d/14mLHbicR6ETiO9n2pA5KNiyDglWN0_V4/view?usp=sharing
+
+
 ## Dataset
 This repository does not contain the original dataset. 
 The original dataset used for the project can be obtained from: https://www.kaggle.com/datasets/theosmithdevey/mammonet20k
@@ -10,6 +14,7 @@ The original dataset used for the project can be obtained from: https://www.kagg
 ## Folder Structure
 Folder Structure should be as follows
 
+```
 root/
 ├──MammoNet32k/
 │       ├──processed/ Processed images (ignored by git)
@@ -21,6 +26,7 @@ root/
 ├──README.md
 ├──requirements.txt
 ├──.gitignore
+```
 
 ## Installation
 1. **Clone the repository**
