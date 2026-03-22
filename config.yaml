@@ -1,0 +1,30 @@
+# Random seed for reproducibility
+seed: 42
+
+paths:
+  data_path: "../MammoNet32k"
+  model_path: "../models"
+
+# Standardised labels
+labels:
+  normal: 0
+  benign: 1
+  malignant: 2
+
+# Image input size
+img_size: [224, 224]
+
+# Training batch size
+batch_size: 16
+
+# Whether to use TensorFlow autotune
+use_autotune: true
+
+training:
+  feature_extract:
+    lr: 0.0001
+    epochs: 40
+  fine_tune:
+    lr: 0.00001
+    epochs: 20
+  dropout_rate: 0.5

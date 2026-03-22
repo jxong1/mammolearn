@@ -1,0 +1,1 @@
+{"file_paths": ["vgg16_gap_feature_extract", "vgg16_gap_fine_tune", "vgg16_fine_tune"], "weights": [1.088438252675443, 1.024559292461892, 0.6819468082539266]}
