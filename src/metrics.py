@@ -1,4 +1,4 @@
-from models import predict_with_threshold
+from src.models import predict_with_threshold
 
 import numpy as np
 import pandas as pd

@@ -1,6 +1,6 @@
 from dataset import create_ds_from_df
 from plots import plot_val_loss, plot_roc_pathology
-from models import predict_with_threshold
+from src.models import predict_with_threshold
 from metrics import *
 
 import numpy as np

@@ -1,7 +1,7 @@
 import numpy as np
 import cv2
 import tensorflow as tf
-from models import WeightedEnsemble
+from src.models import WeightedEnsemble
 from PIL import Image
 from tensorflow.keras.applications.vgg16 import preprocess_input
 
