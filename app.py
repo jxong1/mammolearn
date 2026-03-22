@@ -49,12 +49,9 @@ def predict(image):
     confidence = y_prob[0, prediction]
     confidence_percent = confidence * 100
     
-    print("Done predicting")
-    cam = get_gradcam_ensemble(input_tensor, ensemble_models, ensemble_weights)
-    overlay = overlay_cam(orig_img, cam)
     # # Generate Grad-CAM and overlay
-    # cam = get_gradcam_ensemble(image, ensemble_model)
-    # overlay = overlay_cam(orig_img, cam)
+    cam = get_gradcam_ensemble(image, ensemble_model)
+    overlay = overlay_cam(orig_img, cam)
 
     text_output = (
         f"Prediction: {mappings[prediction].capitalize()}\n"
