@@ -50,7 +50,7 @@ def predict(image):
     confidence_percent = confidence * 100
     
     # # Generate Grad-CAM and overlay
-    cam = get_gradcam_ensemble(image, ensemble_model)
+    cam = get_gradcam_ensemble(input_tensor, ensemble_model)
     overlay = overlay_cam(orig_img, cam)
 
     text_output = (
